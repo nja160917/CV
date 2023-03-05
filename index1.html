@@ -1,0 +1,409 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title> 🦁 Ann's Personal Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Include jQuery and Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <!-- Initialize and configure popovers with tabindex -->
+
+  <table cellspacing="20">
+    <tr>
+      <td>
+        <image src="images/SD-modified.png" width="100" height="100" alt=" Ann Do Personal Profile"></image>
+      </td>
+      <td>
+        <h2> Ann Do</h2>
+        <p><em> Software Engineer <strong> at IBR.</strong></em></p>
+        <p>I possess a strong drive to develop visually stunning and highly functional websites and mobile applications.
+        </p>
+
+
+    </tr>
+  </table>
+  </td>
+
+  <hr>
+  <h3>Educations</h3>
+
+  <!-- <a href="#" class="my-button" data-toggle="popover"
+    data-content="<div>Enter 2:06 the Reporting Senior Cumulative Average (RSCA) here.<ul><li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance'>MyRecord > Performance > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative Score (CUM).</li><li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at <a href='https://www.bol.navy.mil/ccdreports/'>BUPERS ONLINE (BOL)</a>.</li></ul></div>">
+    Click me!
+  </a> -->
+  <!-- <a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex='1' data-content="<div tabindex='2'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+    <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex='3'>MyRecord > Performance
+        > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative
+      Score (CUM).</li>
+    <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at
+      <a href='https://www.bol.navy.mil/ccdreports/' tabindex='4'>BUPERS ONLINE (BOL)</a>.</li>
+  </ul>
+</div>">Click here</a>
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+      container: 'body',
+      trigger: 'focus'
+    }).on('shown.bs.popover', function () {
+      var $popover = $(this).next('.popover');
+      $popover.find('[tabindex]').first().focus();
+      $popover.on('keydown', function (e) {
+        if (e.keyCode === 9 && !e.shiftKey) { // if Tab key is pressed
+          e.preventDefault();
+          var $next = $(document.activeElement).next('[tabindex]');
+          if ($next.length) {
+            $next.focus();
+          } else {
+            $popover.find('[tabindex]').first().focus();
+          }
+        } else if (e.keyCode === 9 && e.shiftKey) { // if Shift + Tab keys are pressed
+          e.preventDefault();
+          var $prev = $(document.activeElement).prev('[tabindex]');
+          if ($prev.length) {
+            $prev.focus();
+          } else {
+            $popover.find('[tabindex]').last().focus();
+          }
+        }
+      });
+    });
+  });
+</script> -->
+
+<!-- <a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex='1' data-content="<div tabindex='2' role='dialog' aria-modal='true' aria-label='Popover content'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex='3'>MyRecord > Performance
+      > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative
+    Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at
+    <a href='https://www.bol.navy.mil/ccdreports/' tabindex='4'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    trigger: 'focus'
+  });
+});
+</script> -->
+
+<!-- 
+<a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex='1' data-content="<div tabindex='2' role='dialog' aria-modal='true'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex='3'>MyRecord > Performance > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at <a href='https://www.bol.navy.mil/ccdreports/' tabindex='4'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    trigger: 'focus'
+  }).on('shown.bs.popover', function () {
+    var $popover = $(this).next('.popover');
+    $popover.find('a:first').focus();
+    $popover.find('a:last').on('keydown', function (e) {
+      if (e.keyCode === 9 && !e.shiftKey) { // if Tab key is pressed
+        e.preventDefault();
+        $popover.find('a:first').focus();
+      }
+    });
+  });
+});
+</script> -->
+<!-- 
+
+<a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex="1" data-content="<div tabindex='2'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex='3'>MyRecord > Performance
+      > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative
+    Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at
+    <a href='https://www.bol.navy.mil/ccdreports/' tabindex='4'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+$(function () {
+$('[data-toggle="popover"]').popover({
+  container: 'body',
+  trigger: 'focus'
+}).on('shown.bs.popover', function () {
+  var $popover = $(this).next('.popover');
+  $popover.find('[tabindex]').on('keydown', function (e) {
+    if (e.keyCode === 9 && e.target === this && !e.shiftKey) { // if Tab key is pressed
+      e.preventDefault();
+      var $next = $(this).next('[tabindex]');
+      if ($next.length === 0) {
+        $next = $popover.find('[tabindex]').first();
+      }
+      $next.focus();
+    } else if (e.keyCode === 9 && e.target === this && e.shiftKey) { // if Shift + Tab keys are pressed
+      e.preventDefault();
+      var $prev = $(this).prev('[tabindex]');
+      if ($prev.length === 0) {
+        $prev = $popover.find('[tabindex]').last();
+      }
+      $prev.focus();
+    }
+  });
+});
+});
+</script> -->
+
+
+<!-- <a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex="1" data-content="
+<div tabindex='2'>
+Enter the Reporting Senior Cumulative Average (RSCA) here.
+<ul>
+  <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' id='link1'>MyRecord > Performance > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at <a href='https://www.bol.navy.mil/ccdreports/' id='link2'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a> -->
+
+<!-- <script>
+$(function () {
+  $('[data-toggle="popover"]').popover({
+    container: 'body',
+    trigger: 'focus'
+  }).on('shown.bs.popover', function () {
+    var $popover = $(this).next('.popover');
+    $popover.find('#link1').focus();
+    $popover.find('a').on('keydown', function (e) {
+      if (e.keyCode === 9 && !e.shiftKey) { // if Tab key is pressed
+        e.preventDefault();
+        if ($(this).attr('id') === 'link1') {
+          $popover.find('#link2').focus();
+        } else {
+          $popover.find('#link1').focus();
+        }
+      } else if (e.keyCode === 9 && e.shiftKey) { // if Shift + Tab keys are pressed
+        e.preventDefault();
+        if ($(this).attr('id') === 'link1') {
+          $popover.find('#link2').focus();
+        } else {
+          $popover.find('#link1').focus();
+        }
+      }
+    });
+  });
+});
+</script> -->
+<!-- <button type="button" class="btn btn-primary" data-toggle="popover" data-placement="bottom" data-html="true" data-container="body" data-content="<form><label for='input-name'>Name:</label><input type='text' id='input-name' tabindex='2'><br><label for='input-email'>Email:</label><input type='email' id='input-email' tabindex='3'></form>" tabindex="1">Click me</button>
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+      container: 'body'
+    }).on('shown.bs.popover', function () {
+      // Set focus on the first input element inside the popover content
+      $(this).next('.popover').find('input:first').focus();
+    });
+  });
+</script> -->
+<!-- <a href="#" role="button" tabindex="0" data-trigger="focus" title="Popover title" data-content="<div tabindex='0' role='tooltip'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>1 RSCA 1 can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex='0'>MyRecord > Performance
+      > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative
+    Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at
+    <a href='https://www.bol.navy.mil/ccdreports/' tabindex='0'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+$(function() {
+$('[data-toggle="popover"]').popover({
+  container: 'body',
+  html: true,
+  placement: 'bottom',
+  template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+});
+}); 
+</script> -->
+<!-- <a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex='1' data-content="<div role='tooltip' tabindex='2' id='popover-content'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>RSCA can be found under <a href='#' id='rsca-link'>MyRecord &gt; Performance
+      &gt; Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative
+    Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at
+    <a href='#' id='psr-link'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+  $(function () {
+      $('[data-toggle="popover"]').popover({
+          container: 'body',
+          trigger: 'focus'
+      }).on('shown.bs.popover', function () {
+          var $popover = $(this).next('.popover');
+          $popover.find('#popover-content').focus();
+          $popover.find('#popover-content a').on('keydown', function (e) {
+              if (e.keyCode === 9 && !e.shiftKey) { // if Tab key is pressed
+                  e.preventDefault();
+                  $popover.find('#popover-content').focus();
+              } else if (e.keyCode === 9 && e.shiftKey) { // if Shift + Tab keys are pressed
+                  e.preventDefault();
+                  $popover.find('#popover-content').focus();
+              }
+          });
+      });
+  });
+</script> -->
+
+
+<!-- <a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" tabindex="1" role="button" aria-describedby="my-popover-content">Click here</a>
+
+<div id="my-popover-content" tabindex="2" aria-hidden="true">
+  Enter the Reporting Senior Cumulative Average (RSCA) here.
+  <ul>
+    <li>RSCA can be found under <a href='https://mnp.navy.mil/group/my-record/performance' tabindex="3">MyRecord > Performance > Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative Score (CUM).</li>
+    <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at <a href='https://www.bol.navy.mil/ccdreports/' tabindex="4">BUPERS ONLINE (BOL)</a>.</li>
+  </ul>
+</div>
+
+<script>
+  $(function () {
+    $('[data-toggle="popover"]').popover({
+      container: 'body',
+      trigger: 'focus',
+      html: true,
+      content: function () {
+        return $('#my-popover-content').html();
+      }
+    });
+  });
+</script> -->
+
+<a href="#" data-toggle="popover" data-html="true" data-placement="bottom" title="Popover title" data-trigger="manual" tabindex='1' data-content="<div tabindex='2'>Enter the Reporting Senior Cumulative Average (RSCA) here.<ul>
+  <li>RSCA can be found under <a href='#' tabindex='3'>MyRecord &gt; Performance &gt; Fitness Report and Evaluation</a> section, listed under Performance Summary Averages Info as Cumulative Score (CUM).</li>
+  <li>RSCA may also be found in Block 43 of your Eval/FitRep, or from your Performance Summary Record (PSR) at <a href='#' tabindex='4'>BUPERS ONLINE (BOL)</a>.</li>
+</ul>
+</div>">Click here</a>
+
+<script>
+$(function () {
+  // Initialize popover
+  $('[data-toggle="popover"]').popover();
+
+  // Keep the popover open when focus is inside it
+  $('[data-toggle="popover"]').on('shown.bs.popover', function () {
+    $(this).attr('aria-describedby', $(this).attr('aria-describedby') + ' keepopen');
+  }).on('focusout', function (e) {
+    if ($(e.relatedTarget).closest('#' + $(this).attr('aria-describedby')).length === 0) {
+      $(this).popover('hide').removeAttr('aria-describedby');
+    }
+  });
+
+  // Handle keyboard navigation inside the popover
+  $('[data-toggle="popover"]').on('keydown', function (e) {
+    if ($(this).attr('aria-describedby').indexOf('keepopen') !== -1) {
+      var $popover = $('#' + $(this).attr('aria-describedby'));
+
+      // Tab key: move to the next link or close the popover
+      if (e.keyCode === 9) {
+        e.preventDefault();
+        if (e.shiftKey) {
+          $popover.find('a').last().focus();
+        } else {
+          $popover.find('a').first().focus();
+        }
+      }
+
+      // Escape key: close the popover
+      if (e.keyCode === 27) {
+        $(this).popover('hide').removeAttr('aria-describedby');
+      }
+    }
+  });
+});
+</script>
+
+
+
+
+
+  <ul>
+    <li>Valenciate College 2</li>
+    <li>University of Florida</li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2017-2019</td>
+        <td>Teaching Assistant</td>
+      </tr>
+      <tr>
+        <td>2020</td>
+        <td>Software Engineer</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+
+  <table>
+    <tr>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Web Development</td>
+            <td>⭐⭐⭐⭐</td>
+
+          </tr>
+          <tr>
+            <td>Mobile Developer</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Database Management</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+
+        </table>
+      </td>
+      <td>
+        <table cellspacing="10">
+          <tr>
+            <td>Web Development</td>
+            <td>⭐⭐⭐⭐</td>
+
+          </tr>
+          <tr>
+            <td>Mobile Developer</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Database Management</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+
+  </table>
+  <hr>
+  <a href="hobbies.html">My hobbies</a>
+  </p><a href="contactMe.html">Contact Me</a>
+</body>
+<!-- 26 -->
+
+</html> -->
